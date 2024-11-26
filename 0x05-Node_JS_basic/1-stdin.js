@@ -3,7 +3,7 @@ process.stdin.on('readable', () => {
   const procs = process.stdin.read();
   if (procs !== null) {
     process.stdout.write(`Your name is: ${procs}\n`);
-    process.stdin.pause();
+    //process.stdin.pause();
   }
 });
 process.stdin.on('end', () => {
